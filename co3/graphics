@@ -1,0 +1,42 @@
+#import_area_peri.py
+
+from grafics import circle as c
+from grafics import rect as r
+from grafics.threed import cube as cu
+from grafics.threed import sphere as s
+print(c.area(2))
+print(c.peri(2))
+print(r.area(2,4))
+print(r.peri(2,4))
+print(cu.area(2,3,4))
+print(cu.peri(2,3,4))
+print(s.area(2))
+print(s.peri(2))
+
+#circle.py
+
+def area(r):
+    return 3.14*r*r
+def peri(r):
+    return 2*3.14*r
+    
+#rect.py
+    
+def area(l,b):
+    return l*b
+def peri(l,b):
+    return 2*(l+b)
+    
+#sphere.py
+
+def peri(r):
+    return (4/3*(3.14*r*r*r))
+def area(r):
+    return (4*3.14*r*r)
+ 
+#cuboid.py
+
+def area(l,b,h):
+    return 2*(l+b+h)
+def peri(l,b,h):
+    return 4*(l+b+h)
